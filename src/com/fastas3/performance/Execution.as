@@ -1,5 +1,8 @@
 package com.fastas3.performance
 {
+	/**
+	 * @author Adrian Wiecek | fastas3.com
+	 */	
 	internal class Execution
 	{
 		public var obj:Object;

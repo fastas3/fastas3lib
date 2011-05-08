@@ -6,7 +6,10 @@ package com.fastas3.performance
 	import flash.utils.Dictionary;
 	import flash.utils.getQualifiedClassName;
 	import flash.utils.getTimer;
-
+	
+	/**
+	 * @author Adrian Wiecek | fastas3.com
+	 */	
 	public class ExecutionTime
 	{
 		private static var executions:Dictionary = new Dictionary();
@@ -101,7 +104,7 @@ package com.fastas3.performance
 						}
 					}
 					avg = totalTime / calls;
-					report += "\ncalls: " + calls + "\ntotal time: " + totalTime + "\navg time: " + avg.toFixed(1) + " ms";
+					report += "\ncalls: " + calls + "\ntotal time: " + totalTime + " ms\navg time: " + avg.toFixed(1) + " ms";
 				}
 			}
 			reportTextField.text = report;

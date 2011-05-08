@@ -2,6 +2,9 @@ package com.fastas3.utils
 {
 	import flash.utils.Dictionary;
 	
+	/**
+	 * @author Adrian Wiecek | fastas3.com
+	 */	
 	public class Dict
 	{
 		private var dictionary:Dictionary;

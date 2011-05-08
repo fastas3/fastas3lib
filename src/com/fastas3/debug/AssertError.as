@@ -1,5 +1,8 @@
 package com.fastas3.debug
 {
+	/**
+	 * @author Adrian Wiecek | fastas3.com
+	 */	
 	public class AssertError extends Error
 	{
 		public function AssertError(message:String)

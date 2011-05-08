@@ -1,6 +1,8 @@
 package com.fastas3.debug
 {
-
+	/**
+	 * @author Adrian Wiecek | fastas3.com
+	 */	
 	public class Assert
 	{
 		public function Assert()

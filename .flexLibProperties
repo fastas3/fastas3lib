@@ -3,6 +3,9 @@
   <includeClasses>
     <classEntry path="com.fastas3.performance.Execution"/>
     <classEntry path="com.fastas3.utils.Dict"/>
+    <classEntry path="com.fastas3.debug.Log"/>
+    <classEntry path="com.fastas3.debug.Assert"/>
+    <classEntry path="com.fastas3.debug.AssertError"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>
