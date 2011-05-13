@@ -6,6 +6,10 @@
     <classEntry path="com.fastas3.debug.Log"/>
     <classEntry path="com.fastas3.debug.Assert"/>
     <classEntry path="com.fastas3.debug.AssertError"/>
+    <classEntry path="com.fastas3.data.FastJSON"/>
+    <classEntry path="com.fastas3.patterns.statemachine.State"/>
+    <classEntry path="com.fastas3.patterns.statemachine.StateMachine"/>
+    <classEntry path="com.fastas3.patterns.statemachine.StateMachineEvent"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>
