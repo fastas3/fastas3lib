@@ -10,6 +10,9 @@
     <classEntry path="com.fastas3.patterns.statemachine.State"/>
     <classEntry path="com.fastas3.patterns.statemachine.StateMachine"/>
     <classEntry path="com.fastas3.patterns.statemachine.StateMachineEvent"/>
+    <classEntry path="com.fastas3.display.managers.DragManager"/>
+    <classEntry path="com.fastas3.display.managers.IDragLogic"/>
+    <classEntry path="com.fastas3.display.managers.DefaultDragLogic"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>
