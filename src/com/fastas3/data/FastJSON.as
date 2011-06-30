@@ -1,7 +1,5 @@
 package com.fastas3.data
 {
-	import mx.utils.StringUtil;
-
 	public class FastJSON
 	{
 		public static const OPEN_CURLY:String = "{";
@@ -23,9 +21,24 @@ package com.fastas3.data
 		{
 			var jsonArray:Array;
 			
-			if(jsonObject is String)
+			if(jsonObject is Number)
 			{
-				return QUOTE + String(jsonObject) + QUOTE;
+				return jsonObject.toString();
+			}
+			else if(jsonObject is String)
+			{
+				return QUOTE + jsonObject + QUOTE;
+			}
+			else if(jsonObject is Boolean)
+			{
+				if(jsonObject)
+				{
+					return TRUE_STRING;
+				}
+				else
+				{
+					return FALSE_STRING;
+				}
 			}
 			else if(jsonObject is Array)
 			{
