@@ -1,5 +1,8 @@
 package com.fastas3.datastructures
 {
+	/**
+	 * @author Adrian Wiecek | fastas3.com
+	 */	
 	public class Array2D
 	{
 		private var array:Array = [];

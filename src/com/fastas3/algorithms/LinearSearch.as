@@ -1,5 +1,8 @@
 package com.fastas3.algorithms
 {
+	/**
+	 * @author Adrian Wiecek | fastas3.com
+	 */	
 	public class LinearSearch
 	{
 		public function LinearSearch()

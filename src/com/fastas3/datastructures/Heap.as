@@ -1,9 +1,11 @@
 package com.fastas3.datastructures
 {
+	/**
+	 * @author Adrian Wiecek | fastas3.com
+	 */	
 	public class Heap
 	{
-		private var heap:Array = [];
-		private var count:int = 0;
+		private var heap:Vector.<Object> = new Vector.<Object>();
 		private var compare:Function;
 		
 		public function Heap(compare:Function)
@@ -11,49 +13,48 @@ package com.fastas3.datastructures
 			this.compare = compare;
 		}
 		
-		public function insert(object:Object):void
+		public function peek():Object
 		{
-			enqueue(object);
+			if(heap.length > 0)
+			{
+				return heap[0];
+			}
+			return null;
 		}
 		
-		public function removeRoot():Object
+		public function enqueue(object:Object):void
 		{
-			return dequeue();
-		}
-		
-		private function enqueue(object:Object):void
-		{
-			count++;
+			var count:int = heap.length;
 			heap[count] = object;
 			walkUp(count);
 		}
 		
-		private function dequeue():Object
+		public function dequeue():Object
 		{
 			var root:Object;
+			var count:int = heap.length;
 			if(count >= 1)
 			{
-				root = heap[1];
-				heap[1] = heap[count];
+				root = heap[0];
+				heap[0] = heap[count - 1];
 				heap.pop();
-				walkDown(1);
-				count--;
+				walkDown(0);
 			}
 			return root;
 		}
 		
 		private function walkUp(index:int):void
 		{
-			var parent:int = index / 2;
+			var parent:int = index >> 1;
 			var child:int = index;
 			var objectAtIndex:Object = heap[child];
-			while(parent > 0)
+			while(child > 0 && parent >= 0)
 			{
 				if(compare(objectAtIndex, heap[parent]) > 0)
 				{
 					heap[child] = heap[parent];
 					child = parent;
-					parent /= 2;
+					parent >>= 1;
 				}
 				else
 				{
@@ -65,13 +66,14 @@ package com.fastas3.datastructures
 		
 		private function walkDown(index:int):void
 		{
+			var count:int = heap.length;
 			if(index >= count)
 			{
 				return;
 			}
 			
 			var parent:int = index;
-			var child:int = index * 2;
+			var child:int = index << 1;
 			var objectAtIndex:Object = heap[parent];
 			
 			while(child < count)
@@ -87,7 +89,7 @@ package com.fastas3.datastructures
 				{
 					heap[parent] = heap[child];
 					parent = child;
-					child *= 2;
+					child <<= 1;
 				}
 				else
 				{

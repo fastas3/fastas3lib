@@ -10,7 +10,6 @@
     <classEntry path="com.fastas3.patterns.statemachine.StateMachineEvent"/>
     <classEntry path="com.fastas3.display.managers.drag.DragManager"/>
     <classEntry path="com.fastas3.display.managers.drag.IDragLogic"/>
-    <classEntry path="com.fastas3.datastructures.Heap"/>
     <classEntry path="com.fastas3.datastructures.Array2D"/>
     <classEntry path="com.fastas3.algorithms.BinarySearch"/>
     <classEntry path="com.fastas3.algorithms.LinearSearch"/>

@@ -1,5 +1,8 @@
 package com.fastas3.algorithms
 {
+	/**
+	 * @author Adrian Wiecek | fastas3.com
+	 */	
 	public class BinarySearch
 	{
 		public function BinarySearch()
@@ -12,28 +15,27 @@ package com.fastas3.algorithms
 			var high:int = int(collection.length) - 1;
 
 			var mid:int;
-			var midVal:int;
+			var midValue:int;
 			
 			while (low <= high)
 			{
 				mid = (low + high) >>> 1; // division by 2 (>>> prevents overflows on large collections)
-				midVal = int(collection[mid][property]);
+				midValue = int(collection[mid][property]);
 				
-				if (midVal < value)
+				if (midValue < value)
 				{
 					low = mid + 1
 				}					
-				else if (midVal > value)
+				else if (midValue > value)
 				{
 					high = mid - 1;
 				}
 				else
 				{
-					return collection[mid]; // value found
+					return collection[mid];
 				}
 			}
-			return null;  // value not found.
+			return null;
 		}
-		
 	}
 }
