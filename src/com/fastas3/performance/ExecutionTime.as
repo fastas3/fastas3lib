@@ -104,7 +104,7 @@ package com.fastas3.performance
 						}
 					}
 					avg = totalTime / calls;
-					report += "\ncalls: " + calls + "\ntotal time: " + totalTime + " ms\navg time: " + avg.toFixed(1) + " ms";
+					report += "\ncalls: " + calls + "\ntotal time: " + totalTime + " ms\navg time: " + avg.toFixed(1) + " ms\n\n";
 				}
 			}
 			reportTextField.text = report;
