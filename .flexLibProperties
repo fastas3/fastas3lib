@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <flexLibProperties includeAllClasses="true" version="3">
   <includeClasses>
-    <classEntry path="com.fastas3.performance.Execution"/>
-    <classEntry path="com.fastas3.utils.Dict"/>
+    <classEntry path="com.fastas3.algorithms.search.BinarySearch"/>
+    <classEntry path="com.fastas3.algorithms.search.LinearSearch"/>
+    <classEntry path="com.fastas3.datastructures.Array2D"/>
     <classEntry path="com.fastas3.debug.Assert"/>
     <classEntry path="com.fastas3.debug.AssertError"/>
     <classEntry path="com.fastas3.patterns.statemachine.State"/>
     <classEntry path="com.fastas3.patterns.statemachine.StateMachine"/>
     <classEntry path="com.fastas3.patterns.statemachine.StateMachineEvent"/>
-    <classEntry path="com.fastas3.display.managers.drag.DragManager"/>
-    <classEntry path="com.fastas3.display.managers.drag.IDragLogic"/>
-    <classEntry path="com.fastas3.datastructures.Array2D"/>
-    <classEntry path="com.fastas3.algorithms.BinarySearch"/>
-    <classEntry path="com.fastas3.algorithms.LinearSearch"/>
+    <classEntry path="com.fastas3.performance.Execution"/>
+    <classEntry path="com.fastas3.datastructures.Dict"/>
+    <classEntry path="com.fastas3.utils.PolishIDNumbersValidator"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>

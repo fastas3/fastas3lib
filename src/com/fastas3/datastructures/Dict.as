@@ -1,4 +1,4 @@
-package com.fastas3.utils
+package com.fastas3.datastructures
 {
 	import flash.utils.Dictionary;
 	

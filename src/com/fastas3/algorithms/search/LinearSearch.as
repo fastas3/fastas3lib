@@ -1,4 +1,4 @@
-package com.fastas3.algorithms
+package com.fastas3.algorithms.search
 {
 	/**
 	 * @author Adrian Wiecek | fastas3.com
